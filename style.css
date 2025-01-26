@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*------Nav-Bar------*/
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-brand img{
+    height: 60px;
+    padding-left: 30px;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a:hover{
+    color: #AB7442!important;
+}
+.navbar{
+    background: #fff;
+}
+.navbar-toggler{
+    border: none!important;
+}
+.nav-link{
+    color: #555!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+/*------------SLIDER----------*/
+#slider{
+    width: 100%;
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+.carousel-caption h5{
+    color: #fff;
+    font-size: 42px;
+}
+/*----------ABOUT-------------*/
+#about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+#about .btn{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.about-content{
+    padding-top: 20px;
+}
+.skills-bar{
+    padding-left: 0px 30px;
+}
+.skills-bar p{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress-bar{
+    border-radius: 16px;
+}
+.progress{
+    border-radius: 16px !important;
+    margin-bottom: 20px;
+}
+/*------------SERVICES----------*/
+#services{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(service.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#services h1{
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+#services h1:after{
+    content: '';
+    background: #AB7442;
+    display: block;
+    height: 3px;
+    width: 120px;
+    margin: 20px auto 5px;
+}
+.services{
+    margin-top: 40px;
+}
+.icon{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+#services p{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+.services .col-md-3:hover{
+    background: #AB7442;
+    cursor: pointer;
+    transition: 0.7s;
+}
+/*---------------TEAM MEMBERS---------------------*/
+#team{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+h1{
+    text-align: center;
+    color: #555;
+    padding-bottom: 10px;
+}
+h1::after{
+    content: '';
+    background: #AB7442;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.profile-pic{
+    margin-top: 25px;
+}
+.profile-pic .img-box{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+.profile-pic .img-box .img{ 
+    filter: grayscale(1);
+}
+.profile-pic .img-box .img:hover{
+    filter:grayscale(0);
+    cursor: pointer;
+}
+.profile-pic h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #AB7442 !important;
+}
+.profile-pic h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#team .fa{
+    height: 25px;
+    width: 25px;
+    color: #AB7442 !important;
+    background: #fff;
+    padding: 4px;
+    border-radius: 50%;
+}
+.img-box ul{
+    padding: 15px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.img-box ul li{
+    padding: 5px;
+    display: inline-block;
+}
+.img-box:hover ul{
+    opacity: 1;
+}
+.img-box ul, .img-box ul li{
+    transition: 0.5s;
+}
+/*--------------PROMO----------------*/
+#promo{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Logo_2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 38px;
+}
+/*--------------------PRICE PLANS------------------*/
+#price{
+    padding: 40px 0;
+    background: #efefef
+}
+.single-price{
+    margin: 10px auto;
+    display: inline;
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.single-price:hover{
+    box-shadow: 0 2px 20px;
+}
+.price-head{
+    background-color: #AB7442;
+    display: inline;
+    float: left;
+    padding: 10px 5px;
+    text-align: center;
+    width: 100%;
+}
+.price-head h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.price-head p{
+    font-size: 25px;
+    color: #ccc;
+    font-weight: bold;
+    line-height: 30px;
+}
+#price span{
+    font-size: 15px;
+}
+.price-content{
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+}
+.price-content ul li{
+    border-bottom: 1px solid #efefef;
+    padding: 15px 10px;
+    list-style: none;
+}
+ul li:last-child{
+    border: none;
+}
+.fa-check-circle{
+    color: green;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.fa-times-circle{
+    color: red;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.price-button{
+    display: inline;
+    float: left;
+    padding: 15px 15px 30px;
+    text-align: center;
+    width: 100%;
+} 
+.buy-btn{
+    background-color: #AB7442;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 18px;
+    transition: 0.5s;
+}
+.buy-btn:hover{
+    border-color: 1px solid #fff;
+    background-color: #AB7442;
+}
+a{
+    text-decoration: none!important;
+    color: #fff!important;
+}
+/*------------CONTACT------------*/
+#contact{
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+}
+.follow{
+    background: #fff;
+    padding: 10px;
+    margin: 15px;
+}
+.contact-info .fa{
+    margin: 10px;
+    color: #AB7442;
+    font-weight: bold;
+}
+/*----------FOOTER---------*/
+#footer{
+    background: #AB7442;
+    color: #fff;
+    padding: 12px;
+}
+.fa-copyright{
+    margin: 3px;
+    color: black;
+}
+/*---------------------------------------------------------------------*/
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #AB7442;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid #AB7442;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#AB7442,#fa6d86);
+    cursor: pointer;
+}
+.dot1{
+    margin-top: 10px;
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot2{
+    margin-top: 10px;
+    height: 25px;
+    width: 25px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot3{
+    margin-top: 10px;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(88, 2, 88);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot4{
+    margin-top: 10px;
+    height: 25px;
+    width: 25px;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot5{
+    margin-top: 10px;
+    height: 25px;
+    width: 25px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot6{
+    margin-top: 10px;
+    height: 25px;
+    width: 25px;
+    background-color: orange;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot7{
+    margin-top: 10px;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid;
+    display: inline-block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
